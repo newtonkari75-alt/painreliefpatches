@@ -19,25 +19,25 @@
     <meta name="keywords" content="Wellnee Pain Relief Patches, knee pain relief UK, joint pain patches Australia, natural knee relief Canada, topical pain patches, Wellnee official store">
     
     <!-- Canonical & Hreflang for Geo-Targeting -->
-    <link rel="canonical" href="https://wellnee.vercel.app/">
-    <link rel="alternate" href="https://wellnee.vercel.app/" hreflang="x-default" />
-    <link rel="alternate" href="https://wellnee.vercel.app/" hreflang="en-GB" />
-    <link rel="alternate" href="https://wellnee.vercel.app/" hreflang="en-AU" />
-    <link rel="alternate" href="https://wellnee.vercel.app/" hreflang="en-CA" />
-    <link rel="alternate" href="https://wellnee.vercel.app/" hreflang="pt" />
+    <link rel="canonical" href="https://wellnee24h.shop/">
+    <link rel="alternate" href="https://wellnee24h.shop/" hreflang="x-default" />
+    <link rel="alternate" href="https://wellnee24h.shop/" hreflang="en-GB" />
+    <link rel="alternate" href="https://wellnee24h.shop/" hreflang="en-AU" />
+    <link rel="alternate" href="https://wellnee24h.shop/" hreflang="en-CA" />
+    <link rel="alternate" href="https://wellnee24h.shop/" hreflang="pt" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="product">
-    <meta property="og:url" content="https://wellnee.vercel.app/">
+    <meta property="og:url" content="https://wellnee24h.shop/">
     <meta property="og:title" content="Wellnee Pain Relief Patches | Official Store - 70% OFF Today">
     <meta property="og:description" content="Move again without fear. Get 70% OFF on Wellnee Pain Relief Patches. Natural, non-invasive solution for knee pain.">
-    <meta property="og:image" content="https://wellnee.vercel.app/images/wellnee-pain-relief-patches.webp">
+    <meta property="og:image" content="https://wellnee24h.shop/images/wellnee-pain-relief-patches.webp">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Wellnee Pain Relief Patches | Official Store">
     <meta name="twitter:description" content="Move freely again. Targeted natural relief for knee pain. Save 70% Today.">
-    <meta name="twitter:image" content="https://wellnee.vercel.app/images/wellnee-pain-relief-patches.webp">
+    <meta name="twitter:image" content="https://wellnee24h.shop/images/wellnee-pain-relief-patches.webp">
 
     <link rel="icon" type="image/webp" href="images/wellnee-favicon.webp">
 
@@ -49,7 +49,7 @@
         {
           "@type": "Product",
           "name": "Wellnee Pain Relief Patches",
-          "image": "https://wellnee.vercel.app/images/wellnee-pain-relief-patches.webp",
+          "image": "https://wellnee24h.shop/images/wellnee-pain-relief-patches.webp",
           "description": "Natural transdermal patches designed to provide targeted relief for knee pain, inflammation, and stiffness for up to 12 hours.",
           "brand": { "@type": "Brand", "name": "Wellnee" },
           "aggregateRating": {
@@ -59,7 +59,7 @@
           },
           "offers": {
             "@type": "Offer",
-            "url": "https://wellnee.vercel.app/",
+            "url": "https://wellnee24h.shop/",
             "priceCurrency": "USD",
             "price": "19.95",
             "availability": "https://schema.org/InStock",
@@ -69,7 +69,7 @@
         {
           "@type": "WebSite",
           "name": "Wellnee Official",
-          "url": "https://wellnee.vercel.app/"
+          "url": "https://wellnee24h.shop/"
         },
         {
           "@type": "FAQPage",
@@ -262,7 +262,8 @@
                             <div id="eu-flags-container" class="grid grid-cols-2 md:grid-cols-4 gap-3"></div>
                         </div>
                         <div class="mb-10">
-                            <h4 class="text-xs font-black text-gray-400 uppercase mb-4 tracking-tighter" data-i18n="reg_asia">Middle East & Asia</h4>
+                            <!-- Mudado título para Internacional para acomodar Israel e México -->
+                            <h4 class="text-xs font-black text-gray-400 uppercase mb-4 tracking-tighter" data-i18n="reg_world">International</h4>
                             <div id="asia-flags-container" class="grid grid-cols-2 md:grid-cols-4 gap-3"></div>
                         </div>
                     </div>
@@ -319,7 +320,7 @@
                 "popular_t": "Países Mais Populares",
                 "more_countries": "Outros Países",
                 "reg_eu": "Europa",
-                "reg_asia": "Oriente Médio e Ásia",
+                "reg_world": "Internacional", // Atualizado tradução
                 "ship_support": "Envio disponível para todo o mundo. Estoque e prazos confirmados no checkout.",
                 "manual_selection": "Seleção manual necessária para verificação de entrega local.",
                 "n_p": "Privacidade", "n_t": "Termos", "n_s": "Envio", "n_r": "Devoluções", "n_c": "Contacto",
@@ -337,7 +338,7 @@
                 "popular_t": "Most Popular Countries",
                 "more_countries": "Other Countries",
                 "reg_eu": "Europe",
-                "reg_asia": "Middle East & Asia",
+                "reg_world": "International", // Atualizado tradução
                 "ship_support": "Shipping available worldwide. Stock and delivery times confirmed at checkout.",
                 "manual_selection": "Manual selection required for local delivery verification.",
                 "n_p": "Privacy Policy", "n_t": "Terms of Service", "n_s": "Shipping", "n_r": "Returns", "n_c": "Contact Us",
@@ -346,45 +347,72 @@
         };
 
         const popularCountries = [
+            // Apenas os países com links especiais
             { name: 'United States', flag: 'us', status: 'In Stock', class: 'stock-high' },
-            { name: 'United Kingdom', flag: 'gb', status: 'LAST UNITS', class: 'stock-critical' },
+            { name: 'United Kingdom', flag: 'gb', status: 'LAST UNITS', class: 'stock-critical' }, // Adicionado de volta
             { name: 'Canada', flag: 'ca', status: 'In Stock', class: 'stock-high' },
             { name: 'Australia', flag: 'au', status: 'In Stock', class: 'stock-high' },
+            { name: 'New Zealand', flag: 'nz', status: 'In Stock', class: 'stock-high' },
             { name: 'Germany', flag: 'de', status: 'In Stock', class: 'stock-high' },
-            { name: 'France', flag: 'fr', status: 'LAST UNITS', class: 'stock-critical' }
+            { name: 'France', flag: 'fr', status: 'LAST UNITS', class: 'stock-critical' } // Adicionado de volta
         ];
 
         const europeCountries = [
-            { name: 'Netherlands', flag: 'nl' }, { name: 'Switzerland', flag: 'ch' }, { name: 'Belgium', flag: 'be' },
-            { name: 'Austria', flag: 'at' }, { name: 'Denmark', flag: 'dk' }, { name: 'Sweden', flag: 'se' },
-            { name: 'Norway', flag: 'no' }, { name: 'Finland', flag: 'fi' }, { name: 'Italy', flag: 'it' },
-            { name: 'Spain', flag: 'es' }, { name: 'Portugal', flag: 'pt' }, { name: 'Poland', flag: 'pl' },
-            { name: 'Czech Rep.', flag: 'cz' }, { name: 'Slovakia', flag: 'sk' }, { name: 'Slovenia', flag: 'si' },
-            { name: 'Hungary', flag: 'hu' }, { name: 'Romania', flag: 'ro' }
+            // Países da sua lista que são da Europa (sem UK e França pois estão nos populares)
+            { name: 'Austria', flag: 'at' },
+            { name: 'Belgium', flag: 'be' },
+            { name: 'Denmark', flag: 'dk' },
+            { name: 'Finland', flag: 'fi' },
+            { name: 'Greece', flag: 'gr' },
+            { name: 'Ireland', flag: 'ie' },
+            { name: 'Italy', flag: 'it' },
+            { name: 'Netherlands', flag: 'nl' },
+            { name: 'Norway', flag: 'no' },
+            { name: 'Portugal', flag: 'pt' },
+            { name: 'Spain', flag: 'es' },
+            { name: 'Sweden', flag: 'se' },
+            { name: 'Switzerland', flag: 'ch' }
         ];
 
-        const asiaMeCountries = [
-            { name: 'Israel', flag: 'il' }, { name: 'Japan', flag: 'jp' }, { name: 'South Korea', flag: 'kr' },
-            { name: 'Singapore', flag: 'sg' }, { name: 'UAE', flag: 'ae' }, { name: 'Qatar', flag: 'qa' },
-            { name: 'Saudi Arabia', flag: 'sa' }
+        const internationalCountries = [
+            // Restante da sua lista
+            { name: 'Israel', flag: 'il' },
+            { name: 'Mexico', flag: 'mx' }
         ];
+
+        // Função simples que apenas devolve o link correto
+        function getLink(countryCode) {
+            if (countryCode === 'au') {
+                return 'https://www.fasttrack36.com/PHPWHDRK/2JDW741P/';
+            } else if (countryCode === 'nz') {
+                return 'https://www.fasttrack36.com/PHPWHDRK/2JDXKZQB/';
+            } else if (countryCode === 'de') {
+                return 'https://www.fasttrack36.com/PHPWHDRK/2JDSS794/';
+            } else if (countryCode === 'us' || countryCode === 'ca') {
+                return 'https://www.fasttrack36.com/PHPWHDRK/2JDRFBJH/';
+            } else {
+                return 'https://www.fasttrack36.com/PHPWHDRK/2JDQ2FRW/';
+            }
+        }
 
         function createFlagCard(country, isCompact = false) {
+            const link = getLink(country.flag);
+            // Agora é um link <a> direto, sem scripts de clique
             return `
-                <button onclick="checkStock()" class="${isCompact ? 'bg-white p-3 border border-gray-100' : 'bg-white p-6 border border-gray-200 shadow-sm'} rounded-lg hover:shadow-md transition-all flex items-center justify-between text-left group">
+                <a href="${link}" class="${isCompact ? 'bg-white p-3 border border-gray-100' : 'bg-white p-6 border border-gray-200 shadow-sm'} w-full rounded-lg hover:shadow-md transition-all flex items-center justify-between text-left group">
                     <div class="flex items-center gap-4">
                         <img src="https://flagcdn.com/w160/${country.flag}.png" class="${isCompact ? 'w-10' : 'w-16'} h-auto shadow-sm rounded-sm" alt="${country.name}">
                         <span class="font-bold text-[10px] md:text-xs uppercase tracking-tight text-gray-700">${country.name}</span>
                     </div>
                     ${country.status ? `<span class="stock-indicator ${country.class} hidden md:block">${country.status}</span>` : '<i class="fas fa-chevron-right text-[8px] text-gray-300 group-hover:text-brand-dark"></i>'}
-                </button>
+                </a>
             `;
         }
 
         function renderFlags() {
             document.getElementById('popular-flags-container').innerHTML = popularCountries.map(c => createFlagCard(c)).join('');
             document.getElementById('eu-flags-container').innerHTML = europeCountries.map(c => createFlagCard(c, true)).join('');
-            document.getElementById('asia-flags-container').innerHTML = asiaMeCountries.map(c => createFlagCard(c, true)).join('');
+            document.getElementById('asia-flags-container').innerHTML = internationalCountries.map(c => createFlagCard(c, true)).join('');
         }
 
         function toggleMoreCountries() {
@@ -400,7 +428,8 @@
             }
         }
 
-        function checkStock() { window.location.href = 'https://www.clickrtrckr.com/2LW5T8J/3K2QLC6/'; }
+        // Função checkStock/goToOffer removida pois agora são links diretos
+        
         function scrollToSelector() { document.getElementById('region-selector').scrollIntoView({ behavior: 'smooth' }); }
 
         function initLanguage() {
@@ -428,4 +457,5 @@
         });
     </script>
 </body>
+
 </html>
